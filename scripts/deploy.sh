@@ -11,6 +11,7 @@ echo "Compiling new static content"
 rm -rf $TEMP_DIRECTORY || exit 1
 cp -R public $TEMP_DIRECTORY
 cp .gitignore $TEMP_DIRECTORY || exit 1
+cp CNAME $TEMP_DIRECTORY || exit 1
 
 echo "Checking out gh-pages branch"
 git checkout -B gh-pages || exit 1
