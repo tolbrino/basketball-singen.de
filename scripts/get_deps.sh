@@ -1,6 +1,7 @@
 #!/bin/bash
-HUGO_FILENAME="hugo_$(HUGO_RELEASE)_linux_amd64"
-HUGO_TARFILE="$(HUGO_FILENAME).tar.gz"
+
+HUGO_FILENAME="hugo_${HUGO_RELEASE}_linux_amd64"
+HUGO_TARFILE="${HUGO_FILENAME}.tar.gz"
 
 mkdir -p .bin
 cd .bin/
