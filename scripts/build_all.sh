@@ -1,2 +1,2 @@
 #!/bin/bash -e
-$GOPATH/bin/hugo
+./.bin/hugo
