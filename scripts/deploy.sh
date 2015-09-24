@@ -5,7 +5,7 @@ echo "Target: gh-pages branch"
 TEMP_DIRECTORY="/tmp/__temp_static_content"
 CURRENT_COMMIT=`git rev-parse HEAD`
 ORIGIN_URL=`git config --get remote.origin.url`
-ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/git\:\/\/github.com/https\:\/\/$GITHUB_TOKEN@github.com}
+ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/https\:\/\/github.com/https\:\/\/$GITHUB_TOKEN@github.com}
 
 echo "Compiling new static content"
 rm -rf $TEMP_DIRECTORY || exit 1
