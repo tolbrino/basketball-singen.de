@@ -1,6 +1,6 @@
 env:
   global:
-  - HUGO_RELEASE=0.42.1
+  - HUGO_VERSION=0.42.1
 install: "./scripts/get_deps.sh"
 script: "./scripts/build_all.sh"
 deploy:
