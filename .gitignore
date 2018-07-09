@@ -2,3 +2,5 @@
 crash.log
 tmp/
 public/
+node_modules/
+.bin/
