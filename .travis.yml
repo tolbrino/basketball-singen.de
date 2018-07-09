@@ -1,8 +1,8 @@
 env:
   global:
   - HUGO_VERSION=0.42.1
-install: "./scripts/get_deps.sh"
-script: "./scripts/build_all.sh"
+install: "make install"
+script: "make build"
 deploy:
   skip_cleanup: true
   provider: script
