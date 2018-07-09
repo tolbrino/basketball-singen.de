@@ -4,3 +4,5 @@ tmp/
 public/
 node_modules/
 .bin/
+github_deploy_key
+github_deploy_key.pub
