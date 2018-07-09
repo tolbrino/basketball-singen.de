@@ -10,6 +10,6 @@ deploy:
 before_install:
 - openssl aes-256-cbc -K $encrypted_94d59ec4a7b9_key -iv $encrypted_94d59ec4a7b9_iv
   -in github_deploy_key.enc -out github_deploy_key -d
-- chmod 600 github_deploy_key_travis_basketball_singen
+- chmod 600 github_deploy_key
 - eval $(ssh-agent -s)
-- ssh-add github_deploy_key_travis_basketball_singen
+- ssh-add github_deploy_key
