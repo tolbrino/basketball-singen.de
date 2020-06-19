@@ -20,6 +20,7 @@ in {
       stable.yarn
       ## build tools
       stable.openssl
+      stable.travis
     ]
     ++ stable.stdenv.lib.optional stable.stdenv.isLinux stable.inotifyTools
     ++ stable.stdenv.lib.optionals stable.stdenv.isDarwin (with stable.darwin.apple_sdk.frameworks; [
