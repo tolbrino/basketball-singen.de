@@ -23,7 +23,7 @@ all: install build
 
 .PHONY: yarn
 yarn: ## install JS dependencies with yarn
-	yarn install --pure-lockfile
+	yarn install
 
 .PHONY: install
 install: yarn .bin/hugo
