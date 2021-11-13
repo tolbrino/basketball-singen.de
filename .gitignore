@@ -6,3 +6,4 @@ node_modules/
 .bin/
 github_deploy_key
 github_deploy_key.pub
+.hugo_build.lock

@@ -15,7 +15,7 @@ HUGO_OS := FreeBSD
 endif
 endif
 
-HUGO_VERSION ?= 0.42.1
+HUGO_VERSION ?= 0.89.2
 HUGO_ARCH ?= 64bit
 HUGO_PLATFORM ?= ${HUGO_OS}-${HUGO_ARCH}
 
@@ -33,7 +33,7 @@ build: ## build site with hugo
 	.bin/hugo
 
 .bin/hugo:
-	curl -Ls https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_${HUGO_PLATFORM}.tar.gz -o /tmp/hugo.tar.gz
+	curl -Ls https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_${HUGO_PLATFORM}.tar.gz -o /tmp/hugo.tar.gz
 	curl -Ls https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_checksums.txt -o /tmp/hugo_checksums.txt
 	grep "${HUGO_PLATFORM}.tar.gz" /tmp/hugo_checksums.txt | awk '{ print $$1," /tmp/hugo.tar.gz";}' | openssl sha256
 	tar xf /tmp/hugo.tar.gz -C /tmp
